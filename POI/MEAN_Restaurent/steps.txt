@@ -1,0 +1,55 @@
+install node
+
+create application folder  with project name
+create two folder in it: backend and frontend
+
+
+inside backend---------------
+-----------------------------
+npm init
+npm i express --save
+echo $null >> server.js
+npm i -g nodemon
+
+
+inside server.js
+				var express = require('express');
+				var app = express();
+
+				app.get('/', function (req, res) {
+				   res.send('Hello World');
+				})
+
+				var server = app.listen(8081, function () {
+				   var host = server.address().address
+				   var port = server.address().port
+				   
+				   console.log("Example app listening at http://%s:%s", host, port)
+				})
+
+node server.js  // or nodemon server.js
+
+npm i body-parser --save // to read req in express server
+
+npm i mongoose --save // to connect to the backend
+
+
+inside frontend -----
+----------------------------
+ng n <application name>
+ng g s app
+
+
+
+
+
+
+setup databse----------
+------------------
+using https://mlab.com/
+register to mlab.
+create new environment.
+	cloud- AWS
+	regian- asia(mumbai)
+
+create a cluster.
