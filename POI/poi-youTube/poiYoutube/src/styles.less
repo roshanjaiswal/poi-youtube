@@ -1,0 +1,204 @@
+/* You can add global styles to this file, and also import other style files */
+/* common form style */ 
+body {
+    margin: 0 !important;
+}
+
+.corporateFormPageHeader {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 23px;
+}
+@media screen and (max-width: 400px) {
+	.corporateFormPageHeader {
+		font-size: 15px;
+	}
+}
+@media screen and (min-width: 400px) and (max-width: 700px) {
+	.corporateFormPageHeader {
+		font-size: 18px;
+	}
+}
+.corporateForm{
+  min-width: 300px;
+  max-width: 500px;
+  width: 100%;
+  margin: 16px auto;
+  font-size: 16px;
+
+  .corporateForm-header, p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .corporateForm-header {
+    background: rgb(12, 77, 129);
+    padding: 20px;
+    font-size: 1.4em;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  .corporateForm-container {
+    background: #ebebeb;
+    padding: 12px;
+  }
+
+  p {
+    padding: 12px;
+  }
+
+  input, select, button {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    padding: 16px;
+    outline: 0;
+    font-family: inherit;
+    font-size: 0.95em;
+  }
+
+   input[type="email"], input[type="password"], input[type="text"], select {
+    background: #fff;
+    border-color: #bbb;
+    color: #555;
+  }
+
+  input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focus, select:focus {
+    border-color: #888;
+  }
+  
+  button, input[type="submit"] {
+    background: rgb(1, 29, 51);
+    border-color: transparent;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+//   button: disabled {
+// 	  background-color: gray;
+//   }
+  
+/*
+  input[type="submit"] {
+    background: rgb(1, 29, 51);
+    border-color: transparent;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background: #17c;
+  }
+
+  input[type="submit"]:focus {
+    border-color: #05a;
+  }
+ */
+  @media screen and (max-width: 400px) {
+	.corporateForm-header {
+		padding: 11px;
+		font-size: 13px;
+	}
+	input {
+		padding: 6px;
+		font-size: 13px;
+	}
+	p {
+		padding: 8px;
+	}
+  }
+  @media screen and (min-width: 400px) and (max-width: 700px) {
+	.corporateForm-header {
+		padding: 13px;
+		font-size: 16px;
+	}
+	input, select {
+		padding: 10px;
+		font-size: 15px;
+	}
+	p {
+		padding: 10px;
+	}
+  }
+  input.is-invalid {
+    border-color: red !important;
+  }
+  .help-block div {
+    color: red;
+    font-size: 10px;
+  }
+}
+
+/* common form style */ 
+.glyphicon {
+    margin-right: 6px;
+}
+
+.listPageDetails  {
+  .modal.in {
+      opacity: 1;
+      display: block;
+  }
+
+  .modal-backdrop {
+      opacity: .5 !important;
+  }
+
+  .modal.fade .modal-dialog {
+      transform: none;
+  }
+
+  .modal-header .close {
+      position: absolute;
+      right: 7px;
+      top: 3px;
+  }
+
+  .modal-body {
+    font-size: 14px;
+  }
+  span {
+    width: 50%;
+    display: inline-block;
+  }
+  span.title {
+    text-align: right;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+.listPage  {
+
+  thead {
+      background: #17c;
+  }
+
+  .table-hover tbody tr:hover {
+      background: #f9ef2a;
+      cursor: pointer;
+  }
+
+  table {
+      border: 1px solid gray;
+  }
+}
+
+.addRequestButton {
+  background-color: #0c4d81;
+  border: none;
+  height: 30px;
+  color: white;
+  border-radius: 7px;
+  &:hover {
+      background-color: #17c;
+  }
+}
+
+
+

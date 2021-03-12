@@ -1,0 +1,9 @@
+<header class="globalHeader">
+    <div class="logo" routerLink="/home"><img src="../../../assets/images/logo.jpg" alt="Logo"></div>
+    <div class="globalTitle">POI YouTube</div>
+    <div class="globalHeaderNav">
+    <span class="userName" *ngIf="isUserLogedIn"> Hi {{userName}}</span>
+    <a class="globalHeaderlogin" *ngIf="!isUserLogedIn" routerLink="/login"><span class="glyphicon glyphicon-user"></span> Log In</a>
+    <a class="globalHeaderlogout" *ngIf="isUserLogedIn" (click)= "this.logout()"><span class="glyphicon glyphicon-log-out"></span> Log Out</a>
+    </div>
+  </header>

@@ -1,0 +1,61 @@
+.globalHeader {
+	text-align: center;
+    width: 100%;
+    background: #0c4d81;
+	position: fixed;
+	z-index: 999;
+    .logo, .globalTitle, .globalHeaderNav {
+    	display: inline;
+	}
+
+	.logo {
+		height: 46px;
+		width: 100px;
+		position: absolute;
+    	left: 15px;
+		cursor: pointer;
+		img {
+			height: 34px;
+            margin-top: 8px;
+            width: 65px;
+            margin-left: -27px;
+		}
+	}
+
+	span.userName {
+		color: white;
+		margin-right: 10px;
+	}
+
+    .globalTitle {
+	    color: white;
+		font-size: 31px;
+		font-weight: bold;
+		line-height: 50px;
+		text-transform: uppercase;
+	}
+
+	.globalHeaderNav {
+	    position: absolute;
+		right: 20px;
+		a.globalHeaderlogin, a.globalHeaderlogout {
+			color: #fff;
+			line-height: 45px;
+		}
+	}
+	
+	@media screen and (max-width: 400px) {
+		.globalHeaderNav {
+			display: none;
+		}
+		.globalTitle {
+			font-size: 18px;
+		}
+	}
+
+	@media screen and (min-width: 400px) and (max-width: 700px) {
+		.globalTitle {
+			font-size: 23px;
+		}
+	}
+}
